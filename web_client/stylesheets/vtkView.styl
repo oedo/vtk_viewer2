@@ -1,0 +1,28 @@
+.g-vtk-view-container
+  height 500px
+  margin 15px 0
+  position relative
+
+  canvas
+    position absolute
+    z-index 10
+
+  .g-vtk-view-progress-container
+    position absolute
+    margin 10px
+    color white
+    font-size 16px
+    z-index 15
+    user-select none
+
+  .g-vtk-view-progress-loading
+    opacity 1
+
+  .g-vtk-view-progress-complete
+    opacity 0
+    transition all 500ms ease-out
+
+.g-vtk-view-item-selected
+  background-color yellow
+  border-radius 1em
+  border 1px solid
