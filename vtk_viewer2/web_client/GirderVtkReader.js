@@ -69,4 +69,5 @@ class GirderVtkReader {
     }
 }
 
-export default GirderVtkReader;
+// export default GirderVtkReader;
+module.exports = { GirderVtkReader };

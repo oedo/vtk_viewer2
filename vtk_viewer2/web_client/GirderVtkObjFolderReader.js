@@ -1,6 +1,8 @@
-import { restRequest } from 'girder/rest';
+//import { restRequest } from 'girder/rest';
+const {restRequest}=require('girder/rest');
 
-import GirderVtkObjReader from './GirderVtkObjReader';
+//import GirderVtkObjReader from './GirderVtkObjReader';
+const {GirderVtkObjReader}=require('./GirderVtkObjReader');
 
 /**
  * Class to read a Wavefront OBJ file, along with any associated MTL files
@@ -156,4 +158,5 @@ class GirderVtkObjFolderReader extends GirderVtkObjReader {
     }
 }
 
-export default GirderVtkObjFolderReader;
+//export default GirderVtkObjFolderReader;
+module.exports = { GirderVtkObjFolderReader };

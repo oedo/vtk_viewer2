@@ -101,4 +101,5 @@ class GirderVtkObjItemReader extends GirderVtkObjReader {
     }
 }
 
-export default GirderVtkObjItemReader;
+//export default GirderVtkObjItemReader;
+module.exports = { GirderVtkObjItemReader };

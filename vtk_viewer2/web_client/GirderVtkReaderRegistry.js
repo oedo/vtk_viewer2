@@ -70,4 +70,5 @@ class GirderVtkReaderRegistry {
     }
 }
 
-export default GirderVtkReaderRegistry;
+//export default GirderVtkReaderRegistry;
+module.exports = { GirderVtkReaderRegistry };

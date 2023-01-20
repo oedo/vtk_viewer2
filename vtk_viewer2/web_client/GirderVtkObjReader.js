@@ -5,7 +5,8 @@ import vtkMapper from 'vtk.js/Sources/Rendering/Core/Mapper';
 import vtkMtlReader from 'vtk.js/Sources/IO/Misc/MTLReader';
 import vtkObjReader from 'vtk.js/Sources/IO/Misc/OBJReader';
 
-import GirderVtkReader from './GirderVtkReader';
+//import GirderVtkReader from './GirderVtkReader';
+const {GirderVtkReader}=require('./GirderVtkReader');
 
 /**
  * Base class for readers of Wavefront OBJ files from Girder resources.
@@ -158,4 +159,5 @@ class GirderVtkObjReader extends GirderVtkReader {
     }
 }
 
-export default GirderVtkObjReader;
+//export default GirderVtkObjReader;
+module.exports = { GirderVtkObjReader };
